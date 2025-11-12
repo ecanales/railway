@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 from fastapi import FastAPI, File, UploadFile, HTTPException, status,Depends
 from pydantic import BaseModel
 from sqlalchemy import create_engine, MetaData, Table
