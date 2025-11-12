@@ -9,7 +9,7 @@ import pandas as pd
 from joblib import load
 import pytz
 
-#PRUEBA DE CONEXION A UNA BASE DE DATOS SQLITE
+#PRUEBA DE CONEXION A UNA BASE DE DATOS SQLITE d
 
 
 SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:diJgInaGMcraNvUuPsDiOFRlgLcPZOlx@switchyard.proxy.rlwy.net:21436/railway" #aqui va la ruta de la bb que está en railway configurada
