@@ -11,7 +11,8 @@ import pytz
 
 #PRUEBA DE CONEXION A UNA BASE DE DATOS SQLITE
 
-SQLALCHEMY_DATABASE_URL = "switchyard.proxy.rlwy.net:21436" #aqui va la ruta de la bb que está en railway configurada
+
+SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:switchyard.proxy.rlwy.net:21436" #aqui va la ruta de la bb que está en railway configurada
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 metadata = MetaData()
 
