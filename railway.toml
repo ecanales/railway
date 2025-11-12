@@ -1,0 +1,14 @@
+[build]
+builder="NIXPACKS"
+
+[deploy]
+#subir un servicio FastAPI
+startCommnad = "uvicorn app_2:app --host 0.0.0.0 --port $POST"
+numReplicas = 1
+
+#para uso de test, ejemplo: validar conexion a una db
+healthcheckPatch = "/healdh"  #este es el nombre del metodo (endpoint)
+healthcheckTimeout = 60
+sleepApplication = false #permite ahorrar recursos, false=el servicio queda en modo espera (dormido a X tiempo)
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 1
