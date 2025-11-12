@@ -7,3 +7,6 @@ scikit-learn
 pandas
 pymysql
 python-multipart
+gunicorn 
+django 
+streamlit
