@@ -8,11 +8,14 @@ from io import StringIO
 import pandas as pd
 from joblib import load
 import pytz
+import os
+
 
 #PRUEBA DE CONEXION A UNA BASE DE DATOS SQLITE d
 
+#SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:diJgInaGMcraNvUuPsDiOFRlgLcPZOlx@switchyard.proxy.rlwy.net:21436/railway" #aqui va la ruta de la bb que está en railway configurada
+SQLALCHEMY_DATABASE_URL = os.environ["SQLALCHEMY_DATABASE_URL"]
 
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:diJgInaGMcraNvUuPsDiOFRlgLcPZOlx@switchyard.proxy.rlwy.net:21436/railway" #aqui va la ruta de la bb que está en railway configurada
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 metadata = MetaData()
 
